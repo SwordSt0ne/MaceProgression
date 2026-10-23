@@ -5,6 +5,9 @@ Minecraft Java Edition **1.21.11** datapack: a 7-tier, kill-tracked, soulbound M
 ## Install
 Copy this repository folder (`pack.mcmeta` and `data/` must sit directly inside it) into `<world>/datapacks/`, then run `/reload`.
 
+## Crafting
+The vanilla Mace recipe is overridden (`data/minecraft/recipe/mace.json`) with an ingredient from an empty item tag, so a Mace can no longer be crafted. The only Mace source is this pack.
+
 ## Admin commands
 - `/function maceprogression:admin/give` - Tier 1, clears Evolved-path state
 - `/function maceprogression:admin/reset` - Tier 1 mace
