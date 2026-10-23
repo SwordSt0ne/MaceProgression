@@ -1,9 +1,13 @@
 {
   "pack": {
     "description": "Mace Progression - 7-tier, kill-tracked soulbound Mace with an optional Evolved branch",
+    "pack_format": [
+      94,
+      1
+    ],
     "min_format": [
       94,
-      0
+      1
     ],
     "max_format": [
       94,
