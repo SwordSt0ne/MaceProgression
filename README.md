@@ -12,3 +12,5 @@ Copy this repository folder (`pack.mcmeta` and `data/` must sit directly inside 
 - `/function maceprogression:admin/set_tier/t1` ... `t7`
 
 See the project documentation PDF for the full behaviour reference.
+
+Note: This project is made by AI!
