@@ -1,6 +1,6 @@
 # Mace Progression
 
-Minecraft Java Edition **1.21.11** datapack: a 7-tier, kill-tracked, soulbound Mace with automatic death reset and an optional Tier 7 "Evolved Mace" branch (lifesteal + Shieldbreaker).
+Minecraft Java Edition **1.21.11** datapack: a 7-tier, kill-tracked, soulbound Mace with automatic death reset and an optional Tier 7 "Evolved Mace" branch (lifesteal + Shieldbreaker). Fun to use for small (potentially scripted) SMPs that only last a short while. Inspired by Freshlol
 
 ## Install
 Copy this repository folder (`pack.mcmeta` and `data/` must sit directly inside it) into `<world>/datapacks/`, then run `/reload`.
