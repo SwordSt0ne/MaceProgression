@@ -34,9 +34,8 @@ execute if score #kd mp.tmp matches 1.. run function maceprogression:core/kill_l
 execute if score #dd mp.tmp matches 1.. if score @s mp.evolve matches 1.. if items entity @s weapon.mainhand mace[custom_data~{mp_mace:1b}] run function maceprogression:evolved/lifesteal
 execute if score @s mp.heal_pool matches 100.. run function maceprogression:evolved/heal_step
 
-# GOD MACE: lightning on hit, 30% damage nullification
+# GOD MACE: lightning on hit
 execute if score #dd mp.tmp matches 1.. if score @s mp.evolve matches 4 if items entity @s weapon.mainhand mace[custom_data~{mp_god:1b}] if predicate maceprogression:chance_10 run function maceprogression:evolved/god_lightning
-execute if score @s mp.taken_d matches 1.. if score @s mp.evolve matches 4 run function maceprogression:evolved/god_reduce
 
 # shieldbreaker
 execute if score #bd mp.tmp matches 1.. run function maceprogression:evolved/shield_blocked
