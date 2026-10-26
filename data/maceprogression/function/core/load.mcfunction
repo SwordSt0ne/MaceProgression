@@ -17,6 +17,8 @@ scoreboard objectives add mp.init dummy
 scoreboard objectives add mp.tmp dummy
 scoreboard objectives add mp.evo_accept trigger
 scoreboard objectives add mp.evo_decline trigger
+scoreboard objectives add mp.apex_keep trigger
+scoreboard objectives add mp.apex_god trigger
 scoreboard objectives modify mp.tier displayname {text:"Mace Tier",color:"gold"}
 scoreboard objectives setdisplay sidebar mp.tier
 scoreboard players set #10 mp.tmp 10

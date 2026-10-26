@@ -11,6 +11,7 @@ The vanilla Mace recipe is overridden (`data/minecraft/recipe/mace.json`) with a
 ## Admin commands
 - `/function maceprogression:admin/give` - Tier 1, clears Evolved-path state
 - `/function maceprogression:admin/reset` - Tier 1 mace
+- `/function maceprogression:admin/god` - give yourself the GOD MACE (testing)
 - `/function maceprogression:admin/info` - show tier
 - `/function maceprogression:admin/set_tier/t1` ... `t7`
 
@@ -18,3 +19,6 @@ See the project documentation PDF for the full behaviour reference.
 
 Note: This project is made by AI!
 This project is in beta, if you use it in your server and find bugs or exploits please report it to me!
+
+## 100-kill choice
+An awakened Evolved Mace holder who reaches 100 Evolved kills without dying is offered [KEEP] (permanent 100-kill Evolved Mace, never resets on death, no further growth) or [GOD MACE] (currently a placeholder with the awakened stats plus an enchant glint; abilities TBD).
