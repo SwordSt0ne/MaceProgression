@@ -14,6 +14,12 @@ scoreboard objectives add mp.prev_blocked dummy
 scoreboard objectives add mp.block_amt dummy
 scoreboard objectives add mp.heal_pool dummy
 scoreboard objectives add mp.init dummy
+scoreboard objectives add mp.taken custom:damage_taken
+scoreboard objectives add mp.prev_taken dummy
+scoreboard objectives add mp.taken_d dummy
+scoreboard objectives add mp.totem used:totem_of_undying
+scoreboard objectives add mp.prev_totem dummy
+scoreboard objectives add mp.totem_d dummy
 scoreboard objectives add mp.tmp dummy
 scoreboard objectives add mp.evo_accept trigger
 scoreboard objectives add mp.evo_decline trigger
@@ -22,4 +28,5 @@ scoreboard objectives add mp.apex_god trigger
 scoreboard objectives modify mp.tier displayname {text:"Mace Tier",color:"gold"}
 scoreboard objectives setdisplay sidebar mp.tier
 scoreboard players set #10 mp.tmp 10
+scoreboard players set #3 mp.tmp 3
 scoreboard players set #t mp.tmp 0

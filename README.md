@@ -21,6 +21,8 @@ Note: This project is made by AI!
 This project is in beta, if you use it in your server and find bugs or exploits please report it to me!
 
 ## 100-kill choice
-An awakened Evolved Mace holder who reaches 100 Evolved kills without dying is offered [KEEP] (permanent 100-kill Evolved Mace, never resets on death, no further growth) or [GOD MACE] (currently a placeholder with the awakened stats plus an enchant glint; abilities TBD).
+An awakened Evolved Mace holder who reaches 100 Evolved kills without dying is offered:
+- **[KEEP]** - a permanent 100-kill Evolved Mace (never resets on death, no further growth).
+- **[GOD MACE]** - Density V, Breach IV, Wind Burst II, Strength II, Speed II, no fall damage, permanent glowing outline, 30% lifesteal, 30% damage nullification, 10% lightning on hit, and any hit that deals 20+ hearts (after mitigation) shatters totems and kills. It is lost on death (back to the dormant Evolved Mace).
 
-Lifesteal is capped at 25% of damage dealt.
+Lifesteal on the Evolved Mace is capped at 25%.
