@@ -17,3 +17,4 @@ The vanilla Mace recipe is overridden (`data/minecraft/recipe/mace.json`) with a
 See the project documentation PDF for the full behaviour reference.
 
 Note: This project is made by AI!
+This project is in beta, if you use it in your server and find bugs or exploits please report it to me!
