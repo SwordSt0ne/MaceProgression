@@ -28,6 +28,9 @@ execute if score @s mp.taken_d matches 1.. run function maceprogression:core/tra
 # death: credit the killer, then apply the death penalty
 execute if score #dth mp.tmp matches 1.. run function maceprogression:core/on_death
 
+# Perfected players may restart from the beginning at any time
+execute if score @s mp.evolve matches 3 run scoreboard players enable @s mp.restart
+
 # lifesteal
 execute if score #dd mp.tmp matches 1.. if score @s mp.evolve matches 1.. if items entity @s weapon.mainhand mace[custom_data~{mp_mace:1b}] run function maceprogression:evolved/lifesteal
 execute if score @s mp.heal_pool matches 100.. run function maceprogression:evolved/heal_step

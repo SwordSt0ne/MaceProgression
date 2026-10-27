@@ -39,7 +39,7 @@ Tier-ups show a title with particles and sounds (more at Tier 4+), Tier 7, Awake
 - **Tiers 1-7:** you fall back to the start of your current tier (you keep the tier, lose the kills toward the next one).
 - **Dormant:** back to 0 Evolved kills. **Awakened:** back to the start of the Awakened stage.
 - **GOD MACE:** lost on death; you return to the start of the Awakened stage and can earn it again.
-- **Perfected:** never resets.
+- **Perfected:** never resets on death. A Perfected player can start over at any time with `/trigger mp.restart` and a confirm click, which returns them to Tier 1 with no progress (the Tier 7 evolution offer becomes available again).
 
 ## Soulbound
 Tracked maces are unbreakable, destroyed if dropped, removed from Ender Chests, and rebuilt automatically if missing. Only the Ender Chest is actively scanned; avoid storing the mace in other containers.

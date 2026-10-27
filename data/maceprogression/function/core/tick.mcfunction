@@ -3,6 +3,7 @@ execute as @a run function maceprogression:core/player
 execute as @a[scores={mp.taken_d=400..,mp.totem_d=1..}] run function maceprogression:evolved/god_totem
 execute as @a[scores={mp.evo_accept=1..}] run function maceprogression:evolved/accept_check
 execute as @a[scores={mp.evo_decline=1..}] run function maceprogression:evolved/decline_check
+execute as @a[scores={mp.restart=1..}] run function maceprogression:evolved/restart_check
 execute as @a[scores={mp.apex_keep=1..}] run function maceprogression:evolved/apex_keep_check
 execute as @a[scores={mp.apex_god=1..}] run function maceprogression:evolved/apex_god_check
 scoreboard players add #t mp.tmp 1
