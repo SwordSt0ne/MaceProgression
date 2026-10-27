@@ -1,8 +1,6 @@
 scoreboard objectives add mp.tier dummy
 scoreboard objectives add mp.deaths deathCount
 scoreboard objectives add mp.prev_deaths dummy
-scoreboard objectives add mp.kills playerKillCount
-scoreboard objectives add mp.prev_kills dummy
 scoreboard objectives add mp.leaves custom:leave_game
 scoreboard objectives add mp.prev_leaves dummy
 scoreboard objectives add mp.evolve dummy
@@ -14,6 +12,12 @@ scoreboard objectives add mp.prev_blocked dummy
 scoreboard objectives add mp.block_amt dummy
 scoreboard objectives add mp.heal_pool dummy
 scoreboard objectives add mp.init dummy
+scoreboard objectives add mp.progress dummy
+scoreboard objectives add mp.pid dummy
+scoreboard objectives add mp.last_att dummy
+scoreboard objectives add mp.att_age dummy
+scoreboard objectives add mp.rank dummy
+scoreboard objectives add mp.farm dummy
 scoreboard objectives add mp.taken custom:damage_taken
 scoreboard objectives add mp.prev_taken dummy
 scoreboard objectives add mp.taken_d dummy
