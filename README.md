@@ -50,3 +50,13 @@ Tracked maces are unbreakable, destroyed if dropped, removed from Ender Chests, 
 - `/function maceprogression:admin/god` - give yourself the GOD MACE (testing)
 - `/function maceprogression:admin/info` - show your stage
 - `/function maceprogression:admin/set_tier/t1` ... `t7`
+
+## Protection V
+A custom armor enchantment, **Protection V**, gives 8 protection points per piece, which is double Protection IV (4). It is mutually exclusive with the other Protection enchantments. It never appears in enchanting tables, loot or trades. The only way to get it is to craft the book:
+
+```
+N E N      N = Netherite Ingot
+S B S      E = Enchanted Golden Apple
+N E N      S = Nether Star,  B = Book
+```
+Apply the book to armor on an anvil. Vanilla's cap still limits total protection to 80%.

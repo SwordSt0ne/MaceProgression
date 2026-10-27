@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": ["NEN", "SBS", "NEN"],
+  "key": {
+    "N": "minecraft:netherite_ingot",
+    "E": "minecraft:enchanted_golden_apple",
+    "S": "minecraft:nether_star",
+    "B": "minecraft:book"
+  },
+  "result": {
+    "id": "minecraft:enchanted_book",
+    "count": 1,
+    "components": {"minecraft:stored_enchantments": {"maceprogression:protection_v": 1}}
+  }
+}
