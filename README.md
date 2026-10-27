@@ -15,7 +15,10 @@ Copy this folder (`pack.mcmeta` and `data/` directly inside it) into `<world>/da
 Kill credit is given when a player dies within 5 seconds of being hit by the killer's tracked mace (held in the main hand).
 - **Underdog bonus:** a kill counts double if the victim outranks you, and counts nothing if they are 3 or more ranks below you. Ranks: tiers 1-7, Dormant 8, Awakened/Perfected 9, GOD 10.
 - **Anti-farm:** the same killer/victim pair only counts once every 5 minutes.
-- **GOD bounty:** killing the GOD MACE holder gives +3 kills of progress.
+- **Dethrone:** killing the GOD MACE holder announces "THE CROWN IS FREE" to the whole server and gives the killer +5 kills of progress (+3 bounty, +2 head start). If the holder dies to something else, the server is still told the crown is free.
+
+## Flair
+Tier-ups show a title with particles and sounds (more at Tier 4+), Tier 7, Awakened, Perfected and the GOD MACE coronation are announced server-wide.
 
 ## Power
 | Stage | Enchantments | Passive effects | Notes |
