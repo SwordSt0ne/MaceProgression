@@ -28,7 +28,7 @@ Kill credit is given when a player dies within 5 seconds of being hit by the kil
 | Tier 6 | Density III, Breach III, Wind Burst I | Haste I, Strength I, Speed I | |
 | Tier 7 | Density IV, Breach III, Wind Burst I | Haste I, Strength I, Speed I | Can evolve on rejoin |
 | Evolved (Dormant) | none | none | 10% lifesteal |
-| Evolved (Awakened) | Density IV, Breach III, Wind Burst I | Strength I, Speed I | Lifesteal grows to 15%; Shieldbreaker at 15 Evolved kills |
+| Evolved (Awakened) | Density IV, Breach III, Wind Burst I | Haste I, Strength I, Speed I | Lifesteal grows to 15%; Shieldbreaker at 15 Evolved kills |
 | Perfected | as Awakened | as Awakened | Final choice: never resets on death, no further growth |
 | GOD MACE | Density V, Breach IV, Wind Burst II | Strength II, Speed II, Resistance II, glowing | No fall damage, 30% lifesteal, 10% lightning on hit, hits dealing 20+ hearts shatter totems and kill |
 
