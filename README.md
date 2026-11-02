@@ -33,7 +33,7 @@ Tier-ups show a title with particles and sounds (more at Tier 4+), Tier 7, Awake
 | Evolved (Dormant) | Density II, Breach II | Haste I, Speed I | 10% lifesteal |
 | Evolved (Awakened) | Density IV, Breach III, Wind Burst I | Haste I, Strength I, Speed I | Lifesteal grows to 15%; Shieldbreaker at 15 Evolved kills |
 | Perfected | as Awakened | as Awakened | Final choice: never resets on death, no further growth |
-| GOD MACE | Density V, Breach IV, Wind Burst II | Strength II, Speed II, Resistance II, glowing | No fall damage, 30% lifesteal, 10% lightning on hit, hits dealing 20+ hearts shatter totems and kill |
+| GOD MACE | Density V, Breach IV, Wind Burst II | Haste I, Strength II, Speed II, Resistance II, glowing | No fall damage, 30% lifesteal, 10% lightning on hit, hits dealing 20+ hearts shatter totems and kill |
 
 ## Death
 - **Tiers 1-7:** you fall back to the start of your current tier (you keep the tier, lose the kills toward the next one).
