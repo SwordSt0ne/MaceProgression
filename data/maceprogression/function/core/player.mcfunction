@@ -30,6 +30,9 @@ function maceprogression:core/calc_rank
 # death: apply the death penalty
 execute if score #dth mp.tmp matches 1.. run function maceprogression:core/on_death
 
+# keep the mace in step with the tier score (e.g. after /scoreboard players set)
+execute if score @s mp.evolve matches ..0 run function maceprogression:core/tier_sync
+
 # Perfected players may restart from the beginning at any time
 execute if score @s mp.evolve matches 3 run scoreboard players enable @s mp.restart
 
