@@ -37,4 +37,7 @@ scoreboard objectives add mp.restart trigger
 scoreboard objectives modify mp.tier displayname {text:"Mace Tier",color:"gold"}
 scoreboard players set #10 mp.tmp 10
 scoreboard players set #3 mp.tmp 3
+scoreboard players set #5 mp.tmp 5
 scoreboard players set #t mp.tmp 0
+data modify storage maceprogression:bars filled set value ["","#","##","###","####","#####"]
+data modify storage maceprogression:bars empty set value ["-----","----","---","--","-",""]

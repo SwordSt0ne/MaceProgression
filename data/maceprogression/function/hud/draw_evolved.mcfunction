@@ -1,0 +1,1 @@
+$title @s actionbar [{text:"$(l) [",color:"dark_red"},{nbt:"filled[$(f)]",storage:"maceprogression:bars",color:"red"},{nbt:"empty[$(f)]",storage:"maceprogression:bars",color:"dark_gray"},{text:"] $(c)/$(n)",color:"dark_red"}]

@@ -1,0 +1,1 @@
+$title @s actionbar [{text:"Tier $(t) [",color:"gray"},{nbt:"filled[$(f)]",storage:"maceprogression:bars",color:"gold"},{nbt:"empty[$(f)]",storage:"maceprogression:bars",color:"dark_gray"},{text:"] $(c)/$(n)",color:"gray"}]
