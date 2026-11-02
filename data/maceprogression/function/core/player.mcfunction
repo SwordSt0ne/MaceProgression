@@ -5,9 +5,6 @@ execute if score @s mp.init matches 1..2 run function maceprogression:core/upgra
 scoreboard players operation #dth mp.tmp = @s mp.deaths
 scoreboard players operation #dth mp.tmp -= @s mp.prev_deaths
 scoreboard players operation @s mp.prev_deaths = @s mp.deaths
-scoreboard players operation #kd mp.tmp = @s mp.kills
-scoreboard players operation #kd mp.tmp -= @s mp.prev_kills
-scoreboard players operation @s mp.prev_kills = @s mp.kills
 scoreboard players operation #dd mp.tmp = @s mp.damage
 scoreboard players operation #dd mp.tmp -= @s mp.prev_damage
 scoreboard players operation @s mp.prev_damage = @s mp.damage
