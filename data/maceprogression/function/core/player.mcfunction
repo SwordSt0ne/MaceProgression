@@ -24,6 +24,9 @@ scoreboard players operation #ld mp.tmp = @s mp.leaves
 scoreboard players operation #ld mp.tmp -= @s mp.prev_leaves
 scoreboard players operation @s mp.prev_leaves = @s mp.leaves
 
+# the tier score doubles as the stage: Dormant 8, Awakened/Perfected 9, GOD 10
+execute if score @s mp.evolve matches 1.. run function maceprogression:core/sync_stage
+
 # keep my rank fresh
 function maceprogression:core/calc_rank
 

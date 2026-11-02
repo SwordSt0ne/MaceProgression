@@ -17,6 +17,9 @@ Kill credit is given when a player is killed by another player who is holding a 
 - **Anti-farm:** the same killer/victim pair only counts once every 5 minutes.
 - **Dethrone:** killing the GOD MACE holder announces "THE CROWN IS FREE" to the whole server and gives the killer +5 kills of progress (+3 bounty, +2 head start). If the holder dies to something else, the server is still told the crown is free.
 
+## Tier score
+The `mp.tier` score (the optional sidebar) shows 1-7 for the standard tiers, then 8 for Dormant, 9 for Awakened/Perfected and 10 for the GOD MACE. These are also the ranks used by the underdog bonus.
+
 ## Progress bar
 While you hold a tracked mace, a small action bar shows your progress, e.g. `Tier 3 [#----] 1/2`, `Dormant [###--] 5/8` or `Awakened [#----] 4/15`.
 
