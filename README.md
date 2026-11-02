@@ -49,6 +49,7 @@ Tracked maces are unbreakable, destroyed if dropped, removed from Ender Chests, 
 - `/function maceprogression:admin/reset` - Tier 1 mace
 - `/function maceprogression:admin/god` - give yourself the GOD MACE (testing)
 - `/function maceprogression:admin/info` - show your stage
+- `/function maceprogression:admin/sidebar_on` / `sidebar_off` - show or hide the tier scoreboard on the side of the screen (hidden by default)
 - `/function maceprogression:admin/set_tier/t1` ... `t7`
 
 ## Protection V
