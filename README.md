@@ -1,16 +1,16 @@
 # Mace Progression
 
-Minecraft Java Edition **1.21.11** datapack: a kill-tracked, soulbound Mace that grows over roughly 50 player kills, with an optional Evolved branch that ends in the GOD MACE. The vanilla Mace recipe is disabled, so this pack is the only Mace source.
+Minecraft Java Edition **1.21.11** datapack: a kill-tracked, soulbound Mace that grows over roughly 37 player kills, with an optional Evolved branch that ends in the GOD MACE. The vanilla Mace recipe is disabled, so this pack is the only Mace source.
 
 ## Install
 Copy this folder (`pack.mcmeta` and `data/` directly inside it) into `<world>/datapacks/`, then run `/reload`.
 
-## Progression (about 50 kills in total)
+## Progression (about 37 kills in total)
 | Stage | Kills to reach | Cumulative |
 |---|---|---|
-| Tier 2 / 3 / 4 / 5 / 6 / 7 | +2 / +3 / +4 / +5 / +6 / +7 | 2 / 5 / 9 / 14 / 20 / 27 |
-| Evolved: Dormant -> Awakened | +8 | 35 |
-| Awakened -> final choice (Perfected or GOD) | +15 | 50 |
+| Tier 2 / 3 / 4 / 5 / 6 / 7 | +1 / +1 / +2 / +3 / +3 / +4 | 1 / 2 / 4 / 7 / 10 / 14 |
+| Evolved: Dormant -> Awakened | +8 | 22 |
+| Awakened -> final choice (Perfected or GOD) | +15 | 37 |
 
 Kill credit is given when a player dies within 5 seconds of being hit by the killer's tracked mace (held in the main hand).
 - **Underdog bonus:** a kill counts double if the victim outranks you, and counts nothing if they are 3 or more ranks below you. Ranks: tiers 1-7, Dormant 8, Awakened/Perfected 9, GOD 10.
