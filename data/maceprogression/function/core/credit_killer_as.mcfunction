@@ -10,6 +10,9 @@ execute store result storage maceprogression:tmp b int 1 run scoreboard players 
 function maceprogression:core/farm_check with storage maceprogression:tmp
 # GOD bounty: +3 for killing the GOD MACE holder
 execute if score #vr mp.tmp matches 10 if score #v mp.tmp matches 1.. run function maceprogression:flair/dethrone
-execute if score #v mp.tmp matches 0 run tellraw @s {text:"That kill gave no progress.",color:"gray"}
-execute if score #v mp.tmp matches 1.. run tellraw @s [{text:"Kill credited: +",color:"gold"},{score:{name:"#v",objective:"mp.tmp"}}]
+scoreboard players set #show mp.tmp 1
+execute if score @s mp.evolve matches 3..4 run scoreboard players set #show mp.tmp 0
+execute if score @s mp.evolve matches ..0 if score @s mp.tier matches 7 run scoreboard players set #show mp.tmp 0
+execute if score #show mp.tmp matches 1 if score #v mp.tmp matches 0 run tellraw @s {text:"That kill gave no progress.",color:"gray"}
+execute if score #show mp.tmp matches 1 if score #v mp.tmp matches 1.. run tellraw @s [{text:"Kill credited: +",color:"gold"},{score:{name:"#v",objective:"mp.tmp"}}]
 execute if score #v mp.tmp matches 1.. run function maceprogression:core/credit_loop
