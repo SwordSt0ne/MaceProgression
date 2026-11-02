@@ -24,12 +24,8 @@ scoreboard players operation #ld mp.tmp = @s mp.leaves
 scoreboard players operation #ld mp.tmp -= @s mp.prev_leaves
 scoreboard players operation @s mp.prev_leaves = @s mp.leaves
 
-# a kill made with the tagged mace in the main hand is credited using the target tracked on earlier ticks
-execute if score #kd mp.tmp matches 1.. if items entity @s weapon.mainhand mace[custom_data~{mp_mace:1b}] run function maceprogression:core/credit_kill
-
-# keep my rank fresh and remember the nearest player while holding a mace (the victim of a one-shot kill is dead by the time the kill is seen)
+# keep my rank fresh
 function maceprogression:core/calc_rank
-execute if items entity @s weapon.mainhand mace[custom_data~{mp_mace:1b}] run function maceprogression:core/track_target
 
 # death: apply the death penalty
 execute if score #dth mp.tmp matches 1.. run function maceprogression:core/on_death

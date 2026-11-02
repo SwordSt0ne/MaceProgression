@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "killed": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"type": "minecraft:player"}
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {"function": "maceprogression:core/on_killed_by_player"}
+}
