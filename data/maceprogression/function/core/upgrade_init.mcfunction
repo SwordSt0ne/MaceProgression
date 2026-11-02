@@ -1,4 +1,6 @@
 scoreboard players operation @s mp.prev_taken = @s mp.taken
+scoreboard players operation @s mp.prev_kills = @s mp.kills
+scoreboard players set @s mp.target 0
 scoreboard players operation @s mp.prev_totem = @s mp.totem
 execute unless score @s mp.pid matches 1.. run function maceprogression:core/assign_pid
 execute unless score @s mp.progress matches 0.. run function maceprogression:tiers/floor

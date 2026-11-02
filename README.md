@@ -12,7 +12,7 @@ Copy this folder (`pack.mcmeta` and `data/` directly inside it) into `<world>/da
 | Evolved: Dormant -> Awakened | +8 | 22 |
 | Awakened -> final choice (Perfected or GOD) | +15 | 37 |
 
-Kill credit is given when a player dies within 5 seconds of being hit by the killer's tracked mace (held in the main hand).
+Kill credit is given when you kill a player while holding your tracked mace in the main hand. The victim is the nearest player within 7 blocks of you while you hold the mace.
 - **Underdog bonus:** a kill counts double if the victim outranks you, and counts nothing if they are 5 or more ranks below you. Ranks: tiers 1-7, Dormant 8, Awakened/Perfected 9, GOD 10.
 - **Anti-farm:** the same killer/victim pair only counts once every 5 minutes.
 - **Dethrone:** killing the GOD MACE holder announces "THE CROWN IS FREE" to the whole server and gives the killer +5 kills of progress (+3 bounty, +2 head start). If the holder dies to something else, the server is still told the crown is free.

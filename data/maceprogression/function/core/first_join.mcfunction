@@ -5,6 +5,8 @@ scoreboard players set @s mp.progress 0
 scoreboard players set @s mp.att_age 0
 scoreboard players set @s mp.heal_pool 0
 scoreboard players operation @s mp.prev_deaths = @s mp.deaths
+scoreboard players operation @s mp.prev_kills = @s mp.kills
+scoreboard players set @s mp.target 0
 scoreboard players operation @s mp.prev_leaves = @s mp.leaves
 scoreboard players operation @s mp.prev_damage = @s mp.damage
 scoreboard players operation @s mp.prev_blocked = @s mp.blocked

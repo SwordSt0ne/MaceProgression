@@ -1,4 +1,3 @@
-function maceprogression:core/calc_rank
 # base value: 1 kill; 2 if the victim outranks you; 0 if the victim is 5+ ranks below you
 scoreboard players set #v mp.tmp 1
 execute if score #vr mp.tmp > @s mp.rank run scoreboard players set #v mp.tmp 2

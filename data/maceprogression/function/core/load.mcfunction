@@ -12,6 +12,10 @@ scoreboard objectives add mp.prev_blocked dummy
 scoreboard objectives add mp.block_amt dummy
 scoreboard objectives add mp.heal_pool dummy
 scoreboard objectives add mp.init dummy
+scoreboard objectives add mp.kills playerKillCount
+scoreboard objectives add mp.prev_kills dummy
+scoreboard objectives add mp.target dummy
+scoreboard objectives add mp.target_rank dummy
 scoreboard objectives add mp.progress dummy
 scoreboard objectives add mp.pid dummy
 scoreboard objectives add mp.last_att dummy

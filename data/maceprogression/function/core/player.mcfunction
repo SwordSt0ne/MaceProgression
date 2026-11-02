@@ -5,6 +5,9 @@ execute if score @s mp.init matches 1..2 run function maceprogression:core/upgra
 scoreboard players operation #dth mp.tmp = @s mp.deaths
 scoreboard players operation #dth mp.tmp -= @s mp.prev_deaths
 scoreboard players operation @s mp.prev_deaths = @s mp.deaths
+scoreboard players operation #kd mp.tmp = @s mp.kills
+scoreboard players operation #kd mp.tmp -= @s mp.prev_kills
+scoreboard players operation @s mp.prev_kills = @s mp.kills
 scoreboard players operation #dd mp.tmp = @s mp.damage
 scoreboard players operation #dd mp.tmp -= @s mp.prev_damage
 scoreboard players operation @s mp.prev_damage = @s mp.damage
@@ -21,11 +24,14 @@ scoreboard players operation #ld mp.tmp = @s mp.leaves
 scoreboard players operation #ld mp.tmp -= @s mp.prev_leaves
 scoreboard players operation @s mp.prev_leaves = @s mp.leaves
 
-# remember who last hit me with a progression mace (kill credit is given on death)
-execute if score @s mp.att_age matches 1.. run scoreboard players remove @s mp.att_age 1
-execute if score @s mp.taken_d matches 1.. run function maceprogression:core/track_attacker
+# a kill made with the tagged mace in the main hand is credited using the target tracked on earlier ticks
+execute if score #kd mp.tmp matches 1.. if items entity @s weapon.mainhand mace[custom_data~{mp_mace:1b}] run function maceprogression:core/credit_kill
 
-# death: credit the killer, then apply the death penalty
+# keep my rank fresh and remember the nearest player while holding a mace (the victim of a one-shot kill is dead by the time the kill is seen)
+function maceprogression:core/calc_rank
+execute if items entity @s weapon.mainhand mace[custom_data~{mp_mace:1b}] run function maceprogression:core/track_target
+
+# death: apply the death penalty
 execute if score #dth mp.tmp matches 1.. run function maceprogression:core/on_death
 
 # Perfected players may restart from the beginning at any time
