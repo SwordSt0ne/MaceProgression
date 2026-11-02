@@ -1,16 +1,16 @@
 # Mace Progression
 
-Minecraft Java Edition **1.21.11** datapack: a kill-tracked, soulbound Mace that grows over roughly 37 player kills, with an optional Evolved branch that ends in the GOD MACE. The vanilla Mace recipe is disabled, so this pack is the only Mace source.
+Minecraft Java Edition **1.21.11** datapack: a kill-tracked, soulbound Mace that grows over roughly 29 player kills, with an optional Evolved branch that ends in the GOD MACE. The vanilla Mace recipe is disabled, so this pack is the only Mace source.
 
 ## Install
 Copy this folder (`pack.mcmeta` and `data/` directly inside it) into `<world>/datapacks/`, then run `/reload`.
 
-## Progression (about 37 kills in total)
+## Progression (about 29 kills in total)
 | Stage | Kills to reach | Cumulative |
 |---|---|---|
 | Tier 2 / 3 / 4 / 5 / 6 / 7 | +1 / +1 / +2 / +3 / +3 / +4 | 1 / 2 / 4 / 7 / 10 / 14 |
-| Evolved: Dormant -> Awakened | +8 | 22 |
-| Awakened -> final choice (Perfected or GOD) | +15 | 37 |
+| Evolved: Dormant -> Awakened | +5 | 19 |
+| Awakened -> final choice (Perfected or GOD) | +10 | 29 |
 
 Kill credit is given when a player is killed by another player who is holding a tracked mace in the main hand. The game's own death attribution decides who the killer is.
 - **Underdog bonus:** a kill counts double if the victim outranks you, and counts nothing if they are 5 or more ranks below you. Ranks: tiers 1-7, Dormant 8, Awakened/Perfected 9, GOD 10.
@@ -21,7 +21,7 @@ Kill credit is given when a player is killed by another player who is holding a 
 The `mp.tier` score (the optional sidebar) shows 1-7 for the standard tiers, then 8 for Dormant, 9 for Awakened/Perfected and 10 for the GOD MACE. These are also the ranks used by the underdog bonus.
 
 ## Progress bar
-While you hold a tracked mace, a small action bar shows your progress, e.g. `Tier 3 [#----] 1/2`, `Dormant [###--] 5/8` or `Awakened [#----] 4/15`.
+While you hold a tracked mace, a small action bar shows your progress, e.g. `Tier 3 [#----] 1/2`, `Dormant [###--] 3/5` or `Awakened [#----] 2/10`.
 
 ## Flair
 Tier-ups show a title with particles and sounds (more at Tier 4+), Tier 7, Awakened, Perfected and the GOD MACE coronation are announced server-wide.
@@ -37,7 +37,7 @@ Tier-ups show a title with particles and sounds (more at Tier 4+), Tier 7, Awake
 | Tier 6 | Density III, Breach III, Wind Burst I | Haste I, Strength I, Speed I | |
 | Tier 7 | Density IV, Breach III, Wind Burst I | Haste I, Strength I, Speed I | Can evolve on rejoin |
 | Evolved (Dormant) | Density II, Breach II | Haste I, Speed I | 10% lifesteal |
-| Evolved (Awakened) | Density IV, Breach III, Wind Burst I | Haste I, Strength I, Speed I | Lifesteal grows to 15%; Shieldbreaker at 15 Evolved kills |
+| Evolved (Awakened) | Density IV, Breach III, Wind Burst I | Haste I, Strength I, Speed I | Lifesteal grows to 15%; Shieldbreaker at 10 Evolved kills |
 | Perfected | as Awakened | as Awakened | Final choice: never resets on death, no further growth |
 | GOD MACE | Density V, Breach IV, Wind Burst II | Haste I, Strength II, Speed II, Resistance II, glowing | No fall damage, 30% lifesteal, 10% lightning on hit, hits dealing 20+ hearts shatter totems and kill |
 

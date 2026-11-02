@@ -1,5 +1,5 @@
 execute unless score @s mp.init matches 1.. run function maceprogression:core/first_join
-execute if score @s mp.init matches 1..2 run function maceprogression:core/upgrade_init
+execute if score @s mp.init matches 1..3 run function maceprogression:core/upgrade_init
 
 # stat deltas
 scoreboard players operation #dth mp.tmp = @s mp.deaths
@@ -50,7 +50,7 @@ execute if score #bd mp.tmp matches 1.. run function maceprogression:evolved/shi
 execute if score #ld mp.tmp matches 1.. if score @s mp.tier matches 7 if score @s mp.evolve matches 0 run function maceprogression:evolved/offer
 
 # pending final choice is shown again on rejoin
-execute if score #ld mp.tmp matches 1.. if score @s mp.evolve matches 2 if score @s mp.evolve_kills matches 23.. run function maceprogression:evolved/apex_offer
+execute if score #ld mp.tmp matches 1.. if score @s mp.evolve matches 2 if score @s mp.evolve_kills matches 15.. run function maceprogression:evolved/apex_offer
 
 # recover a missing mace and purge Ender Chest copies
 function maceprogression:core/ender_scan
