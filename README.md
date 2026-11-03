@@ -72,4 +72,4 @@ N E N      S = Nether Star,  B = Book
 Apply the book to armor on an anvil. Vanilla's cap still limits total protection to 80%.
 
 ## Status
-The datapack has been fully tested and is functional.
+The datapack has been fully tested and is functional. Download the latest version in releases.
