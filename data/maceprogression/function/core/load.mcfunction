@@ -28,6 +28,11 @@ scoreboard objectives add mp.evo_decline trigger
 scoreboard objectives add mp.apex_keep trigger
 scoreboard objectives add mp.apex_god trigger
 scoreboard objectives add mp.restart trigger
+bossbar add maceprogression:bloodmoon {text:"Blood Moon - kills count double",color:"red",bold:true}
+bossbar set maceprogression:bloodmoon color red
+bossbar set maceprogression:bloodmoon max 1
+bossbar set maceprogression:bloodmoon value 1
+bossbar set maceprogression:bloodmoon visible false
 scoreboard objectives modify mp.tier displayname {text:"Mace Tier",color:"gold"}
 scoreboard players set #10 mp.tmp 10
 scoreboard players set #3 mp.tmp 3

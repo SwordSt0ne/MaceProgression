@@ -6,5 +6,6 @@ execute as @a[scores={mp.evo_decline=1..}] run function maceprogression:evolved/
 execute as @a[scores={mp.restart=1..}] run function maceprogression:evolved/restart_check
 execute as @a[scores={mp.apex_keep=1..}] run function maceprogression:evolved/apex_keep_check
 execute as @a[scores={mp.apex_god=1..}] run function maceprogression:evolved/apex_god_check
+function maceprogression:bloodmoon/clock
 scoreboard players add #t mp.tmp 1
 execute if score #t mp.tmp matches 20.. run function maceprogression:core/effects_tick

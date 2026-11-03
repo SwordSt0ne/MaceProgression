@@ -17,6 +17,9 @@ Kill credit is given when a player is killed by another player who is holding a 
 - **Anti-farm:** the same killer/victim pair only counts once every 5 minutes.
 - **Dethrone:** killing the GOD MACE holder announces "THE CROWN IS FREE" to the whole server and gives the killer +5 kills of progress (+3 bounty, +2 head start) on top of the normal kill value (so a Tier 6 killer gets +7 including the underdog bonus). If the holder dies to something else, the server is still told the crown is free.
 
+## Blood Moon
+Each night has a 10% chance to become a Blood Moon. It is announced to the whole server with a red boss bar, and every kill's base value is doubled (the dethrone bonus is not) until dawn. Sleeping through the night or setting the time to day ends it. Admins can use `admin/bloodmoon_start` and `admin/bloodmoon_end`.
+
 ## Tier score
 The `mp.tier` score (the optional sidebar) shows 1-7 for the standard tiers, then 8 for Dormant, 9 for Awakened/Perfected and 10 for the GOD MACE. These are also the ranks used by the underdog bonus.
 

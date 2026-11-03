@@ -1,0 +1,1 @@
+function maceprogression:bloodmoon/end
