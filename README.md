@@ -70,4 +70,4 @@ S B S      E = Enchanted Golden Apple
 N E N      S = Nether Star,  B = Book
 ```
 Apply the book to armor on an anvil. Vanilla's cap still limits total protection to 80%.
-CURRENTLY IN TESTING
+The datapack has been fully tested and is functional.
