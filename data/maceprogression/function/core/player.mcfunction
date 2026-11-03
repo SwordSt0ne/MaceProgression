@@ -33,6 +33,9 @@ execute if score #dth mp.tmp matches 1.. run function maceprogression:core/on_de
 # keep the mace in step with the tier score (e.g. after /scoreboard players set)
 execute if score @s mp.evolve matches ..0 run function maceprogression:core/tier_sync
 
+# curses can be chosen whenever none is active
+execute if score @s mp.curse matches 0 run scoreboard players enable @s mp.curse_pick
+
 # Perfected players may restart from the beginning at any time
 execute if score @s mp.evolve matches 3 run scoreboard players enable @s mp.restart
 

@@ -8,6 +8,8 @@ execute if score #d mp.tmp matches 5.. run scoreboard players set #v mp.tmp 0
 execute store result storage maceprogression:tmp a int 1 run scoreboard players get @s mp.pid
 execute store result storage maceprogression:tmp b int 1 run scoreboard players get #vp mp.tmp
 function maceprogression:core/farm_check with storage maceprogression:tmp
+# Curse: +1 on every counted kill
+execute if score @s mp.curse matches 1..3 if score #v mp.tmp matches 1.. run scoreboard players add #v mp.tmp 1
 # Blood Moon: base kill value is doubled
 execute if score #bloodmoon mp.tmp matches 1 if score #v mp.tmp matches 1.. run scoreboard players operation #v mp.tmp += #v mp.tmp
 # GOD bounty: +3 for killing the GOD MACE holder

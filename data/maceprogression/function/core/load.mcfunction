@@ -28,6 +28,8 @@ scoreboard objectives add mp.evo_decline trigger
 scoreboard objectives add mp.apex_keep trigger
 scoreboard objectives add mp.apex_god trigger
 scoreboard objectives add mp.restart trigger
+scoreboard objectives add mp.curse dummy
+scoreboard objectives add mp.curse_pick trigger
 bossbar add maceprogression:bloodmoon {text:"Blood Moon - kills count double",color:"red",bold:true}
 bossbar set maceprogression:bloodmoon color red
 bossbar set maceprogression:bloodmoon max 1
