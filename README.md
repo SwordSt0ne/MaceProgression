@@ -19,9 +19,11 @@ Kill credit is given when a player is killed by another player who is holding a 
 
 ## Curses
 Type `/trigger mp.curse_pick` to take one Curse per life (a clickable menu appears). While cursed, every counted kill gives +1 extra progress. The curse is lifted when you die, and you can choose again.
-- **Glass Cannon:** 4 fewer hearts, 30% more attack damage.
-- **Hunted:** permanent glowing outline, 10% slower.
-- **Brittle:** armor and armor toughness halved.
+- **Frail:** 4 fewer hearts.
+- **Hunted:** permanent glowing outline, 20% slower.
+- **Brittle:** armor and armor toughness reduced by 20%.
+
+All three are pure debuffs, balanced to weaken a fully armored player by a similar amount (roughly 1.6x damage taken).
 
 ## Blood Moon
 Each night has a 10% chance to become a Blood Moon. It is announced to the whole server with a red boss bar, and every kill's base value is doubled (the dethrone bonus is not) until dawn. Sleeping through the night or setting the time to day ends it. Admins can use `admin/bloodmoon_start` and `admin/bloodmoon_end`.
