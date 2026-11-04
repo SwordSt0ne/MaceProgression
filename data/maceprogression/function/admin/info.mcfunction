@@ -2,4 +2,5 @@ execute if score @s mp.evolve matches 1 run return run tellraw @s {text:"Mace: d
 execute if score @s mp.evolve matches 3 run return run tellraw @s {text:"Mace: Perfected Evolved Mace (permanent).",color:"gray"}
 execute if score @s mp.evolve matches 4 run return run tellraw @s {text:"Mace: GOD MACE.",color:"gold"}
 execute if score @s mp.evolve matches 2 run return run tellraw @s [{text:"Mace: awakened Evolved Mace (",color:"gray"},{score:{name:"@s",objective:"mp.evolve_kills"}},{text:" Evolved kills)."}]
+tellraw @s [{text:"Specialization: ",color:"gray"},{score:{name:"@s",objective:"mp.spec"}},{text:" (0 none, 1 Juggernaut, 2 Skirmisher, 3 Stormcaller)"}]
 tellraw @s [{text:"Mace tier: ",color:"gray"},{score:{name:"@s",objective:"mp.tier"},color:"gold"},{text:" (progress ",color:"gray"},{score:{name:"@s",objective:"mp.progress"}},{text:")"}]

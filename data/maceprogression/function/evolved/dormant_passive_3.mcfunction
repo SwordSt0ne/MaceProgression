@@ -1,0 +1,2 @@
+effect give @s minecraft:haste 3 0 true
+effect give @s minecraft:fire_resistance 3 0 true

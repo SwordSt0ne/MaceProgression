@@ -37,6 +37,17 @@ While you hold a tracked mace, a small action bar shows your progress, e.g. `Tie
 ## Flair
 Tier-ups show a title with particles and sounds (more at Tier 4+), Tier 7, Awakened, Perfected and the GOD MACE coronation are announced server-wide.
 
+## Specializations
+At Tier 4 you must choose a path with a clickable menu (or `/trigger mp.spec_pick`). Kills still count, but you cannot reach Tier 5 until you choose. The path survives death and is reset by the Perfected restart. It changes Tiers 5-7 and the Dormant, Awakened and Perfected Evolved Mace. The GOD MACE is the same for everyone.
+
+| | Tier 5 | Tier 6 | Tier 7 | Dormant | Awakened / Perfected |
+|---|---|---|---|---|---|
+| **Juggernaut** (heavy, tough) | Dens III, Breach III; Haste, Resistance I | Dens IV, Breach III; + Strength I | Dens V, Breach III; +2 hearts | Dens III, Breach II; Haste, Resistance I | Dens V, Breach III; Haste, Strength I, Resistance I; +2 hearts |
+| **Skirmisher** (fast, lifesteal) | Dens II, Breach II, Wind Burst II; Speed I; 5% lifesteal | Dens III; 8% lifesteal | Wind Burst III; Speed II; 12% lifesteal | Wind Burst I; Haste, Speed I; 13% lifesteal | Dens III, Breach II, Wind Burst III; Haste, Speed II; lifesteal up to 18% |
+| **Stormcaller** (lightning) | Dens II, Breach II, Wind Burst I; Fire Resistance; 3% lightning | Dens III; + Strength I; 5% lightning | Breach III, Wind Burst II; 7% lightning | Dens II, Breach II; Haste, Fire Resistance; 3% lightning | Dens IV, Breach II, Wind Burst II; Haste, Strength I, Fire Resistance; 8% lightning |
+
+Admin: `admin/set_spec/s0` to `s3` sets the path and rebuilds the mace.
+
 ## Power
 | Stage | Enchantments | Passive effects | Notes |
 |---|---|---|---|

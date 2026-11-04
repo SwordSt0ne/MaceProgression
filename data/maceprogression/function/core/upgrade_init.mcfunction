@@ -7,4 +7,5 @@ execute if score @s mp.evolve matches 2 if score @s mp.evolve_kills matches ..4 
 execute if score @s mp.evolve matches 2 if score @s mp.evolve_kills matches 16.. run scoreboard players set @s mp.evolve_kills 15
 execute if score @s mp.evolve matches 3..4 run scoreboard players set @s mp.evolve_kills 15
 execute unless score @s mp.curse matches 0.. run scoreboard players set @s mp.curse 0
-scoreboard players set @s mp.init 4
+execute unless score @s mp.spec matches 0.. run scoreboard players set @s mp.spec 0
+scoreboard players set @s mp.init 5

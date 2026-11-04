@@ -4,5 +4,6 @@ execute if score @s mp.evolve matches 4 run return run function maceprogression:
 execute if score @s mp.evolve matches 2..3 run return run function maceprogression:evolved/awakened_passive
 execute if score @s mp.evolve matches 1 run return run function maceprogression:evolved/dormant_passive
 execute if score @s mp.tier matches 2.. run effect give @s minecraft:haste 3 0 true
+execute if score @s mp.spec matches 1..3 if score @s mp.tier matches 5.. run return run function maceprogression:spec/effects_standard
 execute if score @s mp.tier matches 5.. run effect give @s minecraft:strength 3 0 true
 execute if score @s mp.tier matches 6.. run effect give @s minecraft:speed 3 0 true
