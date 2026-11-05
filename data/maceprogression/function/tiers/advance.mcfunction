@@ -7,4 +7,3 @@ execute if score @s mp.tier matches 6 run function maceprogression:tiers/t6
 execute if score @s mp.tier matches 7 run function maceprogression:tiers/t7
 tellraw @s [{text:"Your Mace has reached ",color:"gold"},{text:"Tier ",bold:true},{score:{name:"@s",objective:"mp.tier"},bold:true},{text:"!"}]
 function maceprogression:flair/tier_up
-execute if score @s mp.tier matches 4 unless score @s mp.spec matches 1..3 run function maceprogression:spec/offer

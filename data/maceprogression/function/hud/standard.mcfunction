@@ -1,3 +1,4 @@
+execute if score @s mp.tier matches 4 if score @s mp.progress matches 7.. unless score @s mp.spec matches 1..3 run return run title @s actionbar {text:"Specialization ready: /trigger mp.spec_pick",color:"aqua"}
 execute if score @s mp.tier matches 7 run return run title @s actionbar [{text:"Tier 7 ",color:"gold"},{text:"MAX",color:"yellow",bold:true}]
 execute if score @s mp.tier matches 1 run scoreboard players set #fl mp.tmp 0
 execute if score @s mp.tier matches 2 run scoreboard players set #fl mp.tmp 1

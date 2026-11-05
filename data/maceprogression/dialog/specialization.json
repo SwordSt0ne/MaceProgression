@@ -1,0 +1,71 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Choose your Specialization",
+    "color": "aqua",
+    "bold": true
+  },
+  "can_close_with_escape": true,
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "Your path shapes your Mace from Tier 5 through the Evolved Mace. The GOD MACE is the same for everyone. You cannot reach Tier 5 until you choose, and the choice lasts until you restart."
+      }
+    }
+  ],
+  "columns": 1,
+  "actions": [
+    {
+      "label": {
+        "text": "Juggernaut",
+        "color": "red",
+        "bold": true
+      },
+      "tooltip": {
+        "text": "Heavy and tough: Density up to V, Resistance I, +2 hearts at Tier 7 and on the Evolved Mace. No speed bonus."
+      },
+      "width": 220,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger mp.spec_pick set 11"
+      }
+    },
+    {
+      "label": {
+        "text": "Skirmisher",
+        "color": "green",
+        "bold": true
+      },
+      "tooltip": {
+        "text": "Fast and slippery: Wind Burst, Speed (II at Tier 7) and lifesteal from Tier 5. Less raw damage and no Strength."
+      },
+      "width": 220,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger mp.spec_pick set 12"
+      }
+    },
+    {
+      "label": {
+        "text": "Stormcaller",
+        "color": "yellow",
+        "bold": true
+      },
+      "tooltip": {
+        "text": "Lightning on hit (3% rising to 8%), Fire Resistance, Strength from Tier 6. Balanced stats."
+      },
+      "width": 220,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger mp.spec_pick set 13"
+      }
+    }
+  ],
+  "exit_action": {
+    "label": {
+      "text": "Not now"
+    },
+    "width": 220
+  }
+}

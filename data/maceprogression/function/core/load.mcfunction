@@ -31,6 +31,7 @@ scoreboard objectives add mp.restart trigger
 scoreboard objectives add mp.curse dummy
 scoreboard objectives add mp.spec dummy
 scoreboard objectives add mp.spec_pick trigger
+scoreboard objectives add mp.spec_note dummy
 scoreboard objectives add mp.curse_pick trigger
 bossbar add maceprogression:bloodmoon {text:"Blood Moon - kills count double",color:"red",bold:true}
 bossbar set maceprogression:bloodmoon color red
