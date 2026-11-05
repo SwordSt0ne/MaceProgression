@@ -1,7 +1,7 @@
 execute unless score @s mp.init matches 1.. run function maceprogression:core/first_join
-execute if score @s mp.init matches 1..4 run function maceprogression:core/upgrade_init
+execute if score @s mp.init matches 1..5 run function maceprogression:core/upgrade_init
 
-# stat deltas
+# stat deltas (#dth/#dd/#bd/#ld are only valid during this player's turn)
 scoreboard players operation #dth mp.tmp = @s mp.deaths
 scoreboard players operation #dth mp.tmp -= @s mp.prev_deaths
 scoreboard players operation @s mp.prev_deaths = @s mp.deaths
@@ -24,46 +24,23 @@ scoreboard players operation @s mp.prev_leaves = @s mp.leaves
 # the tier score doubles as the stage: Dormant 8, Awakened/Perfected 9, GOD 10
 execute if score @s mp.evolve matches 1.. run function maceprogression:core/sync_stage
 
-# keep my rank fresh
-function maceprogression:core/calc_rank
-
-# death: apply the death penalty
 execute if score #dth mp.tmp matches 1.. run function maceprogression:core/on_death
-
-# keep the mace in step with the tier score (e.g. after /scoreboard players set)
 execute if score @s mp.evolve matches ..0 run function maceprogression:core/tier_sync
 
-# a specialization is chosen at Tier 4
-execute if score @s mp.spec matches 0 if score @s mp.tier matches 4.. if score @s mp.evolve matches ..0 run scoreboard players enable @s mp.spec_pick
-
-execute if score @s mp.spec matches 0 if score @s mp.tier matches 4.. if score @s mp.evolve matches ..0 run function maceprogression:spec/offer_first
-
-# curses can be chosen whenever none is active
+# triggers that only exist in certain states
+execute if score @s mp.spec matches 0 if score @s mp.tier matches 4.. if score @s mp.evolve matches ..0 run function maceprogression:spec/available
 execute if score @s mp.curse matches 0 run scoreboard players enable @s mp.curse_pick
-
-# Perfected players may restart from the beginning at any time
 execute if score @s mp.evolve matches 3 run scoreboard players enable @s mp.restart
 
-# lifesteal
-execute if score #dd mp.tmp matches 1.. if score @s mp.evolve matches ..0 if score @s mp.spec matches 2 if score @s mp.tier matches 5.. if items entity @s weapon.mainhand mace[custom_data~{mp_mace:1b}] run function maceprogression:evolved/lifesteal
-execute if score #dd mp.tmp matches 1.. if score @s mp.evolve matches 1.. if items entity @s weapon.mainhand mace[custom_data~{mp_mace:1b}] run function maceprogression:evolved/lifesteal
+# hits, healing and shields
+execute if score #dd mp.tmp matches 1.. if items entity @s weapon.mainhand mace[custom_data~{mp_mace:1b}] run function maceprogression:core/on_hit
 execute if score @s mp.heal_pool matches 100.. run function maceprogression:evolved/heal_step
-
-# GOD MACE: lightning on hit
-execute if score #dd mp.tmp matches 1.. if score @s mp.evolve matches 4 if items entity @s weapon.mainhand mace[custom_data~{mp_god:1b}] if predicate maceprogression:chance_10 run function maceprogression:evolved/god_lightning
-
-# Stormcaller: lightning on hit (GOD has its own)
-execute if score #dd mp.tmp matches 1.. if score @s mp.spec matches 3 unless score @s mp.evolve matches 4 if items entity @s weapon.mainhand mace[custom_data~{mp_mace:1b}] run function maceprogression:spec/storm_roll
-
-# shieldbreaker
 execute if score #bd mp.tmp matches 1.. run function maceprogression:evolved/shield_blocked
 
-# tier 7 evolution offer on rejoin
+# offers shown again on rejoin
 execute if score #ld mp.tmp matches 1.. if score @s mp.tier matches 7 if score @s mp.evolve matches 0 run function maceprogression:evolved/offer
-
-# pending final choice is shown again on rejoin
 execute if score #ld mp.tmp matches 1.. if score @s mp.evolve matches 2 if score @s mp.evolve_kills matches 15.. run function maceprogression:evolved/apex_offer
 
-# recover a missing mace and purge Ender Chest copies
-function maceprogression:core/ender_scan
-execute unless items entity @s container.* mace[custom_data~{mp_mace:1b}] unless items entity @s weapon.offhand mace[custom_data~{mp_mace:1b}] run function maceprogression:core/recover
+# soulbound: purge Ender Chest copies, rebuild a missing mace
+execute if items entity @s enderchest.* mace[custom_data~{mp_mace:1b}] run function maceprogression:core/ender_scan
+execute unless items entity @s container.* mace[custom_data~{mp_mace:1b}] unless items entity @s weapon.offhand mace[custom_data~{mp_mace:1b}] run function maceprogression:item/build

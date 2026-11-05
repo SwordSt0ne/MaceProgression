@@ -4,4 +4,5 @@ scoreboard players set @s mp.progress 0
 function maceprogression:curse/lift
 scoreboard players set @s mp.spec 0
 scoreboard players set @s mp.heal_pool 0
-function maceprogression:tiers/t1
+scoreboard players set @s mp.tier 1
+function maceprogression:item/build

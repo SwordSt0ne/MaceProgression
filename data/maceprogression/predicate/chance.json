@@ -1,0 +1,12 @@
+{
+  "condition": "minecraft:random_chance",
+  "chance": {
+    "type": "minecraft:score",
+    "target": {
+      "type": "minecraft:fixed",
+      "name": "#chance"
+    },
+    "score": "mp.tmp",
+    "scale": 0.01
+  }
+}
