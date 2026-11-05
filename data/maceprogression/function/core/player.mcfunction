@@ -36,7 +36,7 @@ execute if score @s mp.evolve matches ..0 run function maceprogression:core/tier
 # a specialization is chosen at Tier 4
 execute if score @s mp.spec matches 0 if score @s mp.tier matches 4.. if score @s mp.evolve matches ..0 run scoreboard players enable @s mp.spec_pick
 
-execute if score @s mp.spec matches 0 if score @s mp.tier matches 4.. if score @s mp.evolve matches ..0 run function maceprogression:spec/offer
+execute if score @s mp.spec matches 0 if score @s mp.tier matches 4.. if score @s mp.evolve matches ..0 run function maceprogression:spec/offer_first
 
 # curses can be chosen whenever none is active
 execute if score @s mp.curse matches 0 run scoreboard players enable @s mp.curse_pick

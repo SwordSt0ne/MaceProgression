@@ -38,7 +38,7 @@ While you hold a tracked mace, a small action bar shows your progress, e.g. `Tie
 Tier-ups show a title with particles and sounds (more at Tier 4+), Tier 7, Awakened, Perfected and the GOD MACE coronation are announced server-wide.
 
 ## Specializations
-At Tier 4 you get a one-time chat prompt with an [OPEN MENU] button (visible only to you) that opens a menu screen. You can reopen it any time with `/trigger mp.spec_pick`, and while you wait the action bar reminds you. Kills still count, but you cannot reach Tier 5 until you choose. The path survives death and is reset by the Perfected restart. It changes Tiers 5-7 and the Dormant, Awakened and Perfected Evolved Mace. The GOD MACE is the same for everyone.
+At Tier 4 you get a one-time chat prompt with an [OPEN MENU] button (visible only to you) that opens a menu screen. The same prompt repeats on every kill you make while you are held at Tier 4 without a path, and the action bar reminds you too. You can reopen the menu any time with `/trigger mp.spec_pick`. Kills still count, but you cannot reach Tier 5 until you choose. The path survives death and is reset by the Perfected restart. It changes Tiers 5-7 and the Dormant, Awakened and Perfected Evolved Mace. The GOD MACE is the same for everyone.
 
 | | Tier 5 | Tier 6 | Tier 7 | Dormant | Awakened / Perfected |
 |---|---|---|---|---|---|
