@@ -41,6 +41,6 @@ execute if score #bd mp.tmp matches 1.. run function maceprogression:evolved/shi
 execute if score #ld mp.tmp matches 1.. if score @s mp.tier matches 7 if score @s mp.evolve matches 0 run function maceprogression:evolved/offer
 execute if score #ld mp.tmp matches 1.. if score @s mp.evolve matches 2 if score @s mp.evolve_kills matches 15.. run function maceprogression:evolved/apex_offer
 
-# soulbound: purge Ender Chest copies, rebuild a missing mace
+# soulbound: purge Ender Chest copies; if the mace left the inventory, remove it from where it went and rebuild it
 execute if items entity @s enderchest.* mace[custom_data~{mp_mace:1b}] run function maceprogression:core/ender_scan
-execute unless items entity @s container.* mace[custom_data~{mp_mace:1b}] unless items entity @s weapon.offhand mace[custom_data~{mp_mace:1b}] run function maceprogression:item/build
+function maceprogression:soulbound/check

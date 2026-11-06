@@ -1,0 +1,28 @@
+{
+  "values": [
+    "minecraft:chest",
+    "minecraft:trapped_chest",
+    "minecraft:barrel",
+    "#minecraft:shulker_boxes",
+    "minecraft:hopper",
+    "minecraft:dispenser",
+    "minecraft:dropper",
+    "minecraft:furnace",
+    "minecraft:blast_furnace",
+    "minecraft:smoker",
+    "minecraft:brewing_stand",
+    "minecraft:decorated_pot",
+    {
+      "id": "minecraft:crafter",
+      "required": false
+    },
+    {
+      "id": "#minecraft:copper_chests",
+      "required": false
+    },
+    {
+      "id": "#minecraft:wooden_shelves",
+      "required": false
+    }
+  ]
+}

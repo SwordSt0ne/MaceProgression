@@ -70,7 +70,7 @@ Admin: `admin/set_spec/s0` to `s3` sets the path and rebuilds the mace.
 - **Perfected:** never resets on death. A Perfected player can start over at any time with `/trigger mp.restart` and a confirm click, which returns them to Tier 1 with no progress (the Tier 7 evolution offer becomes available again).
 
 ## Soulbound
-Tracked maces are unbreakable, destroyed if dropped, removed from Ender Chests, and rebuilt automatically if missing. Only the Ender Chest is actively scanned; avoid storing the mace in other containers.
+Tracked maces are unbreakable, destroyed if dropped, removed from Ender Chests, and rebuilt automatically if missing. When the mace leaves your inventory, the pack removes it from the container you are looking at (chests including double chests, barrels, shulker boxes, hoppers, droppers, dispensers, furnaces, brewing stands, decorated pots, crafters, copper chests and shelves) and from nearby item frames, armor stands, chest minecarts/boats, donkeys, llamas and allays, then gives you a fresh one. A mace on your cursor, in your crafting grid or in a bundle you carry still counts as carried.
 
 ## Admin commands
 - `/function maceprogression:admin/give` - Tier 1, clears all Evolved state
