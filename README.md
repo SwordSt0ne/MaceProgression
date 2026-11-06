@@ -62,7 +62,7 @@ Admin: `admin/set_spec/s0` to `s3` sets the path and rebuilds the mace.
 | Evolved (Awakened) | Density IV, Breach III, Wind Burst I | Haste I, Strength I, Speed I | Lifesteal grows to 15%; Shieldbreaker at 10 Evolved kills |
 | Perfected | as Awakened | as Awakened | Final choice: never resets on death, no further growth |
 | GOD MACE | Density V, Breach IV, Wind Burst II | Haste I, Strength II, Speed II, Resistance II, glowing | No fall damage, 30% lifesteal, 10% lightning on hit, hits dealing 20+ hearts shatter totems and kill |
-Note: Subject to change based on which path you pick in Specializations.
+
 ## Death
 - **Tiers 1-7:** you fall back to the start of your current tier (you keep the tier, lose the kills toward the next one).
 - **Dormant:** back to 0 Evolved kills. **Awakened:** back to the start of the Awakened stage.
@@ -92,3 +92,4 @@ Apply the book to armor on an anvil. Vanilla's cap still limits total protection
 
 ## Status
 The datapack has been fully tested and is functional. Download the latest version in releases. However, the pack has not been tested to see if everything is balanced.
+Note: the table in the Power category of this README will be different from your Mace due to the newly added Specializations.
